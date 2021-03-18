@@ -353,7 +353,6 @@ components:
         - id
         - type
         - operator
-        - operatorUrl
         - carpoolerType
         - user
         - from
@@ -815,6 +814,7 @@ components:
         - pending
         - accepted
         - rejected
+        - cancelled
       default: pending
         
       
