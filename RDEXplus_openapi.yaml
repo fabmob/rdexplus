@@ -8,7 +8,7 @@ info:
   title: RDEX+
   description: |-
     RDEX+ is the new version of the **Ridesharing Data EXchange** protocol. It revises completely its former syntax (and reuses the [ViaNavigo Carpool API syntax](https://doc.vianavigo.com/api-carpool/) ), and provides additionnal features.
-    RDEX+ is developed by the [Fabrique des Mobilités](http://lafabriquedesmobilites.fr/en/home/).
+    RDEX+ is developed by [FabMob](https://fabmob.io/).
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
