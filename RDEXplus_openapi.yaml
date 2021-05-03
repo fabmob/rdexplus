@@ -768,7 +768,7 @@ components:
       minLength: 1
       maxLength: 255
       description: Journey's id.
-        In order to be a basis for carpool proof, this id must match the `journey_id` that could be provided to a carpool proof register as described for example in [this documentation of an open source product for France](https://doc.covoiturage.beta.gouv.fr/operateurs/envoyer-des-trajets/schema-json-v2#schema-json-complet).
+        In order to be a basis for carpool proof, this id must match the `journey_id` that could be provided to a carpool proof register as described for example in [this documentation of an open source product for France](https://tech.covoiturage.beta.gouv.fr/partners/preuves/schema.html#schema-json-complet).
     
     carpoolerTypeStrict:
       type: string
