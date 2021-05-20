@@ -8,7 +8,22 @@ info:
   title: RDEX+
   description: |-
     RDEX+ is the new version of the **Ridesharing Data EXchange** protocol. It revises completely its former syntax (and reuses the [ViaNavigo Carpool API syntax](https://doc.vianavigo.com/api-carpool/) ), and provides additionnal features.
+
     RDEX+ is developed by [FabMob](https://fabmob.io/).
+
+
+    [![](https://raw.githubusercontent.com/fabmob/rdexplus/master/resources/rdexplus_presentation-fr.png)](https://raw.githubusercontent.com/fabmob/rdexplus/244a5d691961b2286da1cb49ae0c6e2170666db9/resources/rdexplus_presentation-fr.pdf)
+
+
+    Other resources on the topic:
+      - The report, written by Mobicoop: [RDEX+: Rendre le covoiturage interopérable pour le MaaS"](https://cloud.mobicoop.org/index.php/s/XkLtMgDDpMycp4A#pdfviewer)
+
+      
+    **To take part and contact the RDEX+ Group:**
+  contact:
+    email: rdex_covoit@framalistes.org
+    name: RDEX+ email group
+    url: 'https://framalistes.org/sympa/subscribe/rdex_covoit'
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
