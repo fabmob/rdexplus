@@ -27,7 +27,7 @@ info:
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-  version: 2.0.0
+  version: 2.0.1
 tags:
   - name: Search
     description: API route to search for journeys. This route can be left opened to public.
@@ -462,7 +462,7 @@ components:
             - type
           properties:
             amount:
-              type: string
+              type: number
               description: Journey's amount. Required if `price.type=fixed` or `price.type=variable`.
             type:
               type: string
