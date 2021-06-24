@@ -27,7 +27,7 @@ info:
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-  version: 2.0.0
+  version: 2.0.1
 tags:
   - name: Search
     description: API route to search for journeys. This route can be left opened to public.
@@ -425,6 +425,9 @@ components:
                 - F
                 - M
                 - O
+            verifiedIdentity:
+              type: boolean
+              description: true if the identity of this user has been verified by the operator or a third party; and the firstName, lastName, birthdate have been confirmed as identitical to an official identity proof document. Can be left empty if the information is not available.
         availableSeats:
           type: integer
           description: Available seats. Required if `carpoolerType=driver` or `carpoolerType=both`.
@@ -462,8 +465,11 @@ components:
             - type
           properties:
             amount:
-              type: string
+              type: number
               description: Journey's amount. Required if `price.type=fixed` or `price.type=variable`.
+            currency:
+              type: string
+              description: The 3-letters code of the currency in which the journey's amount is given. This letter code must respect the ISO 4217 norm.
             type:
               type: string
               description: Journey's price type. `unknown` must be returned when the journey is not free, but the amount is unknown (and `price.amount` must then be left empty).
@@ -882,3 +888,4 @@ components:
       bearerFormat: JWT # optional, arbitrary value for documentation purposes
       description: The JWT bearer object schema can be freely defined but must include a freely defined unique operator id (could be `operator_url`) attribute in order to be able to confirm that any GET /bookings request is made by the authorized organization.
         An operator can decide to implement either the `apiKeyAuth` or the `bearerAuth` security scheme.
+
